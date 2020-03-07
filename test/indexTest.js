@@ -5,10 +5,10 @@ const babel = require('babel-core');
 
 const js = fs.readFileSync(path.resolve(__dirname, '..', 'index.js'), 'utf-8')
 
-describe('index.js', function () {
-  describe('companyName', function () {
-    it('is set as Scuber', function () {
-      expect(companyName).to.equal('Scuber');
+describe('index.js', function () { //describe where the test is gonna take place - index.js
+  describe('companyName', function () { //these tests will be about 'companyName'
+    it('is set as Scuber', function () { //companyName should be set as a Scuber
+      expect(companyName).to.equal('Scuber'); // this line is equal companyName == Scuber
     });
 
     it('is defined as a const', function () {
